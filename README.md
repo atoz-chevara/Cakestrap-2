@@ -66,7 +66,7 @@ Add the the plugin to var $helpers
 public $helpers = ['Bootstrap.Bootstrap'];
  ```
  
- ###### Example:
+###### Example:
 ```php
 <?php
 namespace App\Controller;
