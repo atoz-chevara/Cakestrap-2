@@ -1,19 +1,43 @@
 ## CakePHP Twitter Bootstrap Plugin
-A simple plugin that helps to speed up your application development time.
+A Twitter Bootstrap plugin for CakePHP 3.+
 
 #### API Documentation
 You can read the API documentation [here](http://www.cmnworks.com/CakePHP3/plugins/Bootstrap/namespace-Bootstrap.View.Helper.html)
-#### Version
-version 1.1.8 (not complete)
 
 #### Installation
-  - Clone or download the CakePHP Twitter Bootstrap Plugin
-  - Drop it to your CakePHP application i.e app/plugins
-  - Edit your config/bootstrap.php and load the Bootstrap plugin
+###### Using Composer:
+1.) You’ll need to download and install Composer if you haven’t done so already. 
+  ```php
+curl -s https://getcomposer.org/installer | php
+ ```
+2.) On your CakePHP app go to plugins folder.
+
+3.) Get a new Bootstrap plugin by running:
+  ```php
+composer require cmnworks/bootstrap
+ ```
+ 
+###### Github Repo
+  - On GitHub, navigate to the main page of the repository.
+  - Clone the repository to your CakePHP plugins directory
+ 
+#### Configuration
+  - Navigate to your app config folder
+  - Open the bootstrap.php with your favorite editor.
+  - Load the plugin by using the codes below
+
 ```php
 Plugin::load('Bootstrap', ['bootstrap' => true,  'routes' => true]);
 ```
 Template/Layout/default.ctp
+ ###### Bootstrap Asset
+  ```php
+<?php echo $this->Bootstrap->Asset()->style()?>
+ ```
+```php
+<?php echo $this->Bootstrap->Asset()->script()?>
+ ```
+ ###### Example:
 ```php
 <!DOCTYPE html>
 <html lang="en">
@@ -63,5 +87,5 @@ Template/Users/index.ctp
  ?>
 ```
 #### Sample Output
-You can check the sample output
+You can check the plugin html output
 [here](http://www.cmnworks.com/CakePHP3/plugins/Bootstrap/sample.php)
