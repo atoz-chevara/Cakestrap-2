@@ -13,7 +13,7 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-namespace Bootstrap\View\Helper;
+namespace Cakestrap\View\Helper;
 
 /**
  * Add dropdown menus to nearly anything with this simple plugin,
@@ -21,7 +21,7 @@ namespace Bootstrap\View\Helper;
  *
  * <code>
  * <?php
- * echo $this->Bootstrap->Dropdown()
+ * echo $this->Cakestrap->Dropdown()
  *                      ->title("Select")
  *                      ->item(['Option 1'=>['controller'=>'home', 'action'=>'action1'])
  *                      ->item('Option 2')
@@ -32,7 +32,7 @@ namespace Bootstrap\View\Helper;
  *
  * @method title(string $title)
  *
- * @package Bootstrap\View\Helper
+ * @package Cakestrap\View\Helper
  * @link http://getbootstrap.com/javascript/#dropdowns
  */
 

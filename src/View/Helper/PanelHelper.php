@@ -12,7 +12,7 @@
  * @since         1.8.8
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
-namespace Bootstrap\View\Helper;
+namespace Cakestrap\View\Helper;
 
 /**
  * While not always necessary, sometimes you need to put your
@@ -20,7 +20,7 @@ namespace Bootstrap\View\Helper;
  *
  * <code>
  * <?php
- * echo $this->Bootstrap->Panel()->header(string $header)
+ * echo $this->Cakestrap->Panel()->header(string $header)
  *                               ->body(stringOrArray $body)
  *                               ->footer(string $footer)
  *                               ->set();
@@ -31,7 +31,7 @@ namespace Bootstrap\View\Helper;
  * @method body(arrayOrstring $body)
  * @method footer(string $footer)
  *
- * @package Bootstrap\View\Helper
+ * @package Cakestrap\View\Helper
  * @link http://getbootstrap.com/javascript/#modals
  */
 

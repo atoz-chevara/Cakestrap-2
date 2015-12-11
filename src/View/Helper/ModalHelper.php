@@ -12,7 +12,7 @@
  * @since         1.8.8
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
-namespace Bootstrap\View\Helper;
+namespace Cakestrap\View\Helper;
 
 /**
  * Modals are streamlined, but flexible, dialog prompts
@@ -20,7 +20,7 @@ namespace Bootstrap\View\Helper;
  *
  * <code>
  * <?php
- * echo $this->Bootstrap->Modal()->header('Alert')
+ * echo $this->Cakestrap->Modal()->header('Alert')
  *                               ->options(['show' => true])
  *                               ->body("This modal  needs your attention, but it's not super important.")
  *                               ->footer('I am footer.')
@@ -32,7 +32,7 @@ namespace Bootstrap\View\Helper;
  * @method body(arrayOrstring $body)
  * @method footer(string $footer)
  *
- * @package Bootstrap\View\Helper
+ * @package Cakestrap\View\Helper
  * @link http://getbootstrap.com/javascript/#modals
  */
 class ModalHelper extends Basic

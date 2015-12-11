@@ -2,7 +2,7 @@
 A Twitter Bootstrap plugin for CakePHP 3.+
 
 #### API Documentation
-You can read the API documentation [here](http://www.cmnworks.com/CakePHP3/plugins/Bootstrap/namespace-Bootstrap.View.Helper.html)
+You can read the API documentation [here](http://www.cmnworks.com/CakePHP/plugins/Cakestrap/namespace-Cakestrap.View.Helper.html)
 
 #### Requirements
 - CakePHP version >= 3.+
@@ -21,31 +21,31 @@ curl -s https://getcomposer.org/installer | php
 
 3.) Get this plugin by running the codes in console:
   ```php
-composer require cmnworks/bootstrap:*
+composer require cmnworks/cakestrap
  ```
 ###### Cloning Repository:
   - Navigate to your CakePHP src/plugins directory
-  - Clone the repository using this link https://github.com/cmnworks/Bootstrap
+  - Clone the repository using this link https://github.com/cmnworks/Cakestrap.git
  
 #### Configuration
   - Locate your src/config folder.
   - Open the bootstrap.php file with your favorite editor.
-  - At the very bottom, load the plugin by using the codes below
+  - At the very bottom of the file, load the plugin by using the codes below
 
 ```php
-Plugin::load('Bootstrap', ['bootstrap' => true,  'routes' => true]);
+Plugin::load('Cakestrap', ['bootstrap' => true,  'routes' => true]);
 ```
 src/Template/Layout/default.ctp
 ###### Bootstrap Asset
 Add the codes below inside html head.
 ```php
 <head>
-<?php echo $this->Bootstrap->Asset()->style()?>
+<?php echo $this->Cakestrap->Asset()->style()?>
 </head>
  ```
  Add the codes below before body end tag.
 ```php
-<?php echo $this->Bootstrap->Asset()->script()?>
+<?php echo $this->Cakestrap->Asset()->script()?>
  </body>
  ```
 ###### Example:
@@ -56,11 +56,11 @@ Add the codes below inside html head.
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <?php echo $this->Bootstrap->Asset()->style()?>
+    <?php echo $this->Cakestrap->Asset()->style()?>
   </head>
 <body>
 <?php echo $this->fetch('content')?>
-<?php echo $this->Bootstrap->Asset()->script()?>
+<?php echo $this->Cakestrap->Asset()->script()?>
 </body>
 </html>
 ```
@@ -69,7 +69,7 @@ src/Controller/UsersController.php
 Declare the plugin to var $helpers
 
 ```php
-public $helpers = ['Bootstrap.Bootstrap'];
+public $helpers = ['Cakestrap.Cakestrap'];
  ```
  
 ###### Example:
@@ -78,7 +78,7 @@ public $helpers = ['Bootstrap.Bootstrap'];
 namespace App\Controller;
 class UsersController extends AppController
 {
-    public $helpers = ['Bootstrap.Bootstrap'];
+    public $helpers = ['Cakestrap.Cakestrap'];
     public function initialize()
     {
         parent::initialize();
@@ -93,7 +93,7 @@ class UsersController extends AppController
 src/Template/Users/index.ctp
 ```php
  <?php
- echo $this->Bootstrap->Tab()
+ echo $this->Cakestrap->Tab()
                       ->nav('Tab 1')
                       ->content("This Tab 1  needs your attention.")
                       ->prepare($isActive = true)
@@ -111,7 +111,7 @@ Modify your application’s composer.json file and add the Bootstrap plugin detail
 ```php
    "autoload": {
         "psr-4": {
-			"Bootstrap\\": "./plugins/Bootstrap/src"
+			"Cakestrap\\": "./plugins/Cakestrap/src"
         }
     },
 ```
@@ -122,4 +122,4 @@ $ php composer.phar dumpautoload
 
 #### Sample Output
 You can check the plugin html output
-[here](http://www.cmnworks.com/CakePHP3/plugins/Bootstrap/sample.php)
+[here](http://www.cmnworks.com/CakePHP/plugins/Cakestrap/output)

@@ -13,7 +13,7 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-namespace Bootstrap\View\Helper;
+namespace Cakestrap\View\Helper;
 
 /**
  * Flexible plugin that utilizes a handful of
@@ -21,7 +21,7 @@ namespace Bootstrap\View\Helper;
  *
  * <code>
  * <?php
- * echo $this->Bootstrap->Tab()
+ * echo $this->Cakestrap->Tab()
  *                      ->nav('Tab 1')
  *                      ->content("This Tab 1  needs your attention, but it's not super important.")
  *                      ->prepare($isActive = true)
@@ -38,7 +38,7 @@ namespace Bootstrap\View\Helper;
  * @method content(string $content)
  * @method nav(string $nav)
  *
- * @package Bootstrap\View\Helper
+ * @package Cakestrap\View\Helper
  */
 
 class TabHelper extends Basic

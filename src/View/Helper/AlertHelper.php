@@ -12,7 +12,7 @@
  * @since         1.8.8
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
-namespace Bootstrap\View\Helper;
+namespace Cakestrap\View\Helper;
 
 /**
  * Provide contextual feedback messages for typical user actions
@@ -20,7 +20,7 @@ namespace Bootstrap\View\Helper;
  *
  * <code>
  * <?php
- * echo $this->Bootstrap->Alert()
+ * echo $this->Cakestrap->Alert()
  *                      ->options(['type' => 'alert-danger', 'dismissible' => true])
  *                      ->content("<strong>Heads up!</strong> This alert needs your attention.")
  *                      ->set()
@@ -30,7 +30,7 @@ namespace Bootstrap\View\Helper;
  * @method options(array $options)
  * @method content(string $content)
  *
- * @package Bootstrap\View\Helper
+ * @package Cakestrap\View\Helper
  * @link http://getbootstrap.com/components/#alerts
  */
 class AlertHelper extends Basic

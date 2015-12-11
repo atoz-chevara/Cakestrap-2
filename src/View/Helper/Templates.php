@@ -13,12 +13,12 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-namespace Bootstrap\View\Helper;
+namespace Cakestrap\View\Helper;
 
 /**
  * Bootstrap basic template configuration.
  *
- * @package Bootstrap\View\Helper
+ * @package Cakestrap\View\Helper
  */
 class Templates
 {
@@ -150,6 +150,22 @@ class Templates
             'tab'        => '<div aria-labelledby=".." class="tab-pane {{active}}" role="tabpanel" id="tab_{{target}}">{{tab}}</div>',
             'navcontent' => '<ul role="tablist" class="nav nav-tabs">{{navcontent}}</ul>',
             'nav'        => '<li role="presentation" class="{{active}}"><a aria-controls=".." data-toggle="tab" role="tab" href="#tab_{{target}}">{{nav}}</a></li>',
+        ];
+        return $config;
+    }
+
+    public static function  table()
+    {
+        $config = [
+            'container' => '<div class="table-responsive-off"><table class="table {{type}} {{class}}">{{container}}</table></div>',
+            'header'    => '<tr>{{header}}</tr>',
+            'thead'     => '<thead><tr>{{thead}}</tr></thead>',
+            'tbody'     => '<tbody>{{tbody}}</tbody>',
+            'th'        => '<th class="{{class}}">{{th}}</th>',
+            'td'        => '<td>{{td}}</td>',
+            'tr'        => '<tr class="{{class}}">{{tr}}</tr>',
+            'radio'     => '<input type="radio" name="{{name}}" value="{{value}}" {{checked}} class="{{class}}" order="{{order}}">',
+            'nav'       => '<li role="presentation" class="{{active}}"><a aria-controls=".." data-toggle="tab" role="tab" href="#tab_{{target}}">{{nav}}</a></li>',
         ];
         return $config;
     }

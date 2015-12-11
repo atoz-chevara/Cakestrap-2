@@ -1,6 +1,6 @@
 <?php
 use Cake\Routing\Router;
 
-Router::plugin('Bootstrap', function ($routes) {
+Router::plugin('Cakestrap', function ($routes) {
     $routes->fallbacks('InflectedRoute');
 });

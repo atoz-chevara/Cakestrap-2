@@ -12,7 +12,7 @@
  * @since         1.8.8
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
-namespace Bootstrap\View\Helper;
+namespace Cakestrap\View\Helper;
 
 /**
  * This helper provides methods for generating asset paths.
@@ -21,14 +21,14 @@ namespace Bootstrap\View\Helper;
  * <code>
  * <?php
  * //auto render bootstrap styles
- *  echo $this->Bootstrap->Asset()->style();
+ *  echo $this->Cakestrap->Asset()->style();
  *
  * //auto render bootstrap scripts
- *  echo $this->Bootstrap->Asset()->script();
+ *  echo $this->Cakestrap->Asset()->script();
  * ?>
  * </code>
  *
- * @package Bootstrap\View\Helper
+ * @package Cakestrap\View\Helper
  */
 
 class AssetHelper extends Basic
@@ -91,9 +91,9 @@ class AssetHelper extends Basic
 
             $this->_style =  $css;
         } else {
-            $css[]  = $this->Html->css('Bootstrap.bootstrap');
-            $css[]  = $this->Html->css('Bootstrap.extend');
-            $css[]  = $this->Html->css('Bootstrap.font-awesome');
+            $css[]  = $this->Html->css('Cakestrap.bootstrap');
+            $css[]  = $this->Html->css('Cakestrap.extend');
+            $css[]  = $this->Html->css('Cakestrap.font-awesome');
         }
 
         return implode("", $css) . implode("", $this->_style);
@@ -121,12 +121,12 @@ class AssetHelper extends Basic
         foreach($helpers as $key=>$value) {
             if(isset($this->_autoScript[$value])) {
                 foreach($this->_autoScript[$value] as $name) {
-                    $js[] = $this->Html->script('Bootstrap.' . strtolower($name));
+                    $js[] = $this->Html->script('Cakestrap.' . strtolower($name));
                 }
             }
         }
 
-        $hasNoScript = !$this->_View->get("Bootstrap.script");
+        $hasNoScript = !$this->_View->get("Cakestrap.script");
         if(!$hasNoScript) {
             $plugin   = sprintf('%s.%s', $this->request->params["plugin"], strtolower($this->request->params['controller']));
             $js[]     = $this->Html->script($plugin);

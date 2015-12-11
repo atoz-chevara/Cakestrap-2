@@ -12,7 +12,7 @@
  * @since         1.8.8
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
-namespace Bootstrap\View\Helper;
+namespace Cakestrap\View\Helper;
 
 /**
  * Easily highlight new or unread items by adding a
@@ -20,13 +20,13 @@ namespace Bootstrap\View\Helper;
  *
  * <code>
  * <?php
- * echo $this->Bootstrap->Badge()->content("New")->set()
+ * echo $this->Cakestrap->Badge()->content("New")->set()
  * ?>
  * </code>
  *
  * @method content(string $content)
  *
- * @package Bootstrap\View\Helper
+ * @package Cakestrap\View\Helper
  * @link http://getbootstrap.com/components/#badges
  */
 class BadgeHelper extends Basic

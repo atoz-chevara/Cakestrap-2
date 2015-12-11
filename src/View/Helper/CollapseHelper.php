@@ -13,7 +13,7 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-namespace Bootstrap\View\Helper;
+namespace Cakestrap\View\Helper;
 
 /**
  * Flexible plugin that utilizes a handful of
@@ -21,7 +21,7 @@ namespace Bootstrap\View\Helper;
  *
  * <code>
  * <?php
- * echo $this->Bootstrap->Collapse()
+ * echo $this->Cakestrap->Collapse()
  *                      ->title("Menu 1")
  *                      ->body("Menu 1 Content")
  *                      ->prepare()
@@ -37,7 +37,7 @@ namespace Bootstrap\View\Helper;
  * @method title(string $title)
  * @method body(string $body)
  *
- * @package Bootstrap\View\Helper
+ * @package Cakestrap\View\Helper
  * @link http://getbootstrap.com/javascript/#collapse
  */
 class CollapseHelper extends Basic

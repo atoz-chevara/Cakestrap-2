@@ -12,14 +12,14 @@
  * @since         1.8.8
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
-namespace Bootstrap\View\Helper;
+namespace Cakestrap\View\Helper;
 
 /**
  * List group items may be buttons instead of list items.
  *
  * <code>
  * <?php
- * echo $this->Bootstrap->ButtonItems()
+ * echo $this->Cakestrap->ButtonItems()
  *                      ->button("One")
  *                      ->button("Two")
  *                      ->button("Three")
@@ -29,7 +29,7 @@ namespace Bootstrap\View\Helper;
  *
  * @method options(array $options)
  *
- * @package Bootstrap\View\Helper
+ * @package Cakestrap\View\Helper
  * @link http://getbootstrap.com/components/#list-group-buttons
  */
 class ButtonItemsHelper extends Basic

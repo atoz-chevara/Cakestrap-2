@@ -12,7 +12,7 @@
  * @since         1.8.8
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
-namespace Bootstrap\View\Helper;
+namespace Cakestrap\View\Helper;
 
 use Cake\View\StringTemplate;
 use Cake\View\Helper;
@@ -20,7 +20,7 @@ use Cake\View\Helper;
 /**
  * Handles magic methods for Bootstrap helpers.
  *
- * @package Bootstrap\View\Helper
+ * @package Cakestrap\View\Helper
  */
 abstract class Basic extends Helper
 {
@@ -140,5 +140,7 @@ abstract class Basic extends Helper
         $this->_button    = [];
         $this->_active    = null;
         $this->_in        = null;
+        $this->radio      = null;
+        $this->checked    = null;
     }
 }

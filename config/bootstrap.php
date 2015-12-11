@@ -1,4 +1,4 @@
 <?php
 use Cake\Core\Configure;
 
-Configure::load('Bootstrap.app_bootstrap', 'default');
+Configure::load('Cakestrap.app_cakestrap', 'default');

@@ -12,20 +12,20 @@
  * @since         1.8.8
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
-namespace Bootstrap\View\Helper;
+namespace Cakestrap\View\Helper;
 
 /**
  * Use the well as a simple effect on an element to give it an inset effect.
  *
  * <code>
  * <?php
- * echo $this->Bootstrap->Well()->content("Look, I'm in a large well!")->set()
+ * echo $this->Cakestrap->Well()->content("Look, I'm in a large well!")->set()
  * ?>
  * </code>
  *
  * @method content(string $content)
  *
- * @package Bootstrap\View\Helper
+ * @package Cakestrap\View\Helper
  * @link http://getbootstrap.com/components/#wells
  */
 class WellHelper extends Basic

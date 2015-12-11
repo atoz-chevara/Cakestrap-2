@@ -12,7 +12,7 @@
  * @since         1.8.8
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
-namespace Bootstrap\View\Helper;
+namespace Cakestrap\View\Helper;
 
 /**
  * List groups are a flexible and powerful component
@@ -21,7 +21,7 @@ namespace Bootstrap\View\Helper;
  *
  * <code>
  * <?php
- * echo $this->Bootstrap->ListGroup()
+ * echo $this->Cakestrap->ListGroup()
  *                      ->item("One")
  *                      ->item("Two")
  *                      ->item("Three")
@@ -29,7 +29,7 @@ namespace Bootstrap\View\Helper;
  * ?>
  * </code>
  *
- * @package Bootstrap\View\Helper
+ * @package Cakestrap\View\Helper
  * @link http://getbootstrap.com/components/#list-group
  */
 class ListGroupHelper extends Basic

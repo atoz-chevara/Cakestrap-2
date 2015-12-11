@@ -12,7 +12,7 @@
  * @since         1.8.8
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
-namespace Bootstrap\View\Helper;
+namespace Cakestrap\View\Helper;
 
 /**
  * Flexible and nicer details or info message boxes
@@ -20,7 +20,7 @@ namespace Bootstrap\View\Helper;
  *
  * <code>
  * <?php
- * echo $this->Bootstrap->CallOut()
+ * echo $this->Cakestrap->CallOut()
  *                      ->options(['type' => 'bs-callout-info'])
  *                      ->title("Note")
  *                      ->content("This callout  needs your attention, but it's not super important.")
@@ -32,7 +32,7 @@ namespace Bootstrap\View\Helper;
  * @method title(string $title)
  * @method content(string $content)
  *
- * @package Bootstrap\View\Helper
+ * @package Cakestrap\View\Helper
  */
 
 class CallOutHelper extends Basic
