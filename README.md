@@ -37,13 +37,16 @@ Plugin::load('Bootstrap', ['bootstrap' => true,  'routes' => true]);
 ```
 src/Template/Layout/default.ctp
 ###### Bootstrap Asset
-Add the codes below inside <head></head>
+Add the codes below inside html head.
 ```php
+<head>
 <?php echo $this->Bootstrap->Asset()->style()?>
+</head>
  ```
- Add the codes below before </body>
+ Add the codes below before body end tag.
 ```php
 <?php echo $this->Bootstrap->Asset()->script()?>
+ </body>
  ```
 ###### Example:
 ```php
@@ -62,7 +65,9 @@ Add the codes below inside <head></head>
 </html>
 ```
 src/Controller/UsersController.php
-Add the the plugin to var $helpers
+
+Declare the plugin to var $helpers
+
 ```php
 public $helpers = ['Bootstrap.Bootstrap'];
  ```
