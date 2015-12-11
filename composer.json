@@ -33,6 +33,5 @@
             "Bootstrap\\Test\\": "tests",
             "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
         }
-    },
-    "minimum-stability": "beta"
+    }
 }
