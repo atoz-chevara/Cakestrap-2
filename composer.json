@@ -21,5 +21,6 @@
             "Bootstrap\\": "src"
         }
     },
-	"minimum-stability":"dev"
+	"minimum-stability":"dev",
+	"preferred-install": "dev"
 }

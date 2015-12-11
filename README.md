@@ -7,38 +7,40 @@ You can read the API documentation [here](http://www.cmnworks.com/CakePHP3/plugi
 #### Requirements
 - CakePHP version >= 3.+
 - Php >=5.4
-
+- Composer
 #### Installation
-You can get this plugin by using composer or by cloning the repo.
+You can get this plugin using composer or by cloning the repository.
 
 ###### Using Composer:
 1.) You’ll need to download and install Composer if you haven’t done so already. 
   ```php
 curl -s https://getcomposer.org/installer | php
  ```
-2.) On your CakePHP app navigate to plugins folder.
+2.) On your CakePHP app navigate to src/plugins folder.
 
-3.) Get this plugin by running:
+3.) Get this plugin by running the codes in console:
   ```php
 composer require cmnworks/bootstrap:*
  ```
-###### Cloning Repo:
-  - Navigate to your CakePHP plugins directory
+###### Cloning Repository:
+  - Navigate to your CakePHP src/plugins directory
   - Clone the repository using this link https://github.com/cmnworks/Bootstrap
  
 #### Configuration
-  - Navigate to your app config folder
-  - Open the bootstrap.php with your favorite editor.
-  - Load the plugin by using the codes below
+  - Locate your src/config folder.
+  - Open the bootstrap.php file with your favorite editor.
+  - At the very bottom, load the plugin by using the codes below
 
 ```php
 Plugin::load('Bootstrap', ['bootstrap' => true,  'routes' => true]);
 ```
-Template/Layout/default.ctp
+src/Template/Layout/default.ctp
 ###### Bootstrap Asset
-  ```php
+Add the codes below inside <head></head>
+```php
 <?php echo $this->Bootstrap->Asset()->style()?>
  ```
+ Add the codes below before </body>
 ```php
 <?php echo $this->Bootstrap->Asset()->script()?>
  ```
@@ -59,6 +61,12 @@ Template/Layout/default.ctp
 </html>
 ```
 src/Controller/UsersController.php
+Add the the plugin to var $helpers
+```php
+public $helpers = ['Bootstrap.Bootstrap'];
+ ```
+ 
+ ###### Example:
 ```php
 <?php
 namespace App\Controller;
@@ -76,7 +84,7 @@ class UsersController extends AppController
 }
 ```
 
-Template/Users/index.ctp
+src/Template/Users/index.ctp
 ```php
  <?php
  echo $this->Bootstrap->Tab()
@@ -91,6 +99,21 @@ Template/Users/index.ctp
                       ->set()
  ?>
 ```
+
+###### Autoloading Plugin Classes:
+Modify your application’s composer.json file and add the Bootstrap plugin details like the following information below.
+```php
+   "autoload": {
+        "psr-4": {
+			"Bootstrap\\": "./plugins/Bootstrap/src"
+        }
+    },
+```
+Additionally, you will need to tell Composer to refresh its autoloading cache:
+```php
+$ php composer.phar dumpautoload
+```
+
 #### Sample Output
 You can check the plugin html output
 [here](http://www.cmnworks.com/CakePHP3/plugins/Bootstrap/sample.php)
