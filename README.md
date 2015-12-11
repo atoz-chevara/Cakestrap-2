@@ -22,7 +22,7 @@ curl -s https://getcomposer.org/installer | php
   ```php
 composer require cmnworks/bootstrap
  ```
-###### Clone Repo
+###### Cloning Repo:
   - Navigate to your CakePHP plugins directory
   - Clone the repository using this link https://github.com/cmnworks/Bootstrap
  
