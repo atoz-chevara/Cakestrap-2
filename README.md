@@ -18,8 +18,8 @@ composer require cmnworks/bootstrap
  ```
  
 ###### Github Repo
-  - On GitHub, navigate to the main page of the repository.
-  - Clone the repository to your CakePHP plugins directory
+  - On GitHub, navigate to your CakePHP plugins directory
+  - Clone the repository with this link https://github.com/cmnworks/Bootstrap
  
 #### Configuration
   - Navigate to your app config folder
