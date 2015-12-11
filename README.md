@@ -30,14 +30,14 @@ composer require cmnworks/bootstrap
 Plugin::load('Bootstrap', ['bootstrap' => true,  'routes' => true]);
 ```
 Template/Layout/default.ctp
- ###### Bootstrap Asset
+###### Bootstrap Asset
   ```php
 <?php echo $this->Bootstrap->Asset()->style()?>
  ```
 ```php
 <?php echo $this->Bootstrap->Asset()->script()?>
  ```
- ###### Example:
+###### Example:
 ```php
 <!DOCTYPE html>
 <html lang="en">
