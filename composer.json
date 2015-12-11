@@ -1,5 +1,5 @@
 {
-    "name": "CMNworks/Bootstrap",
+    "name": "Cmnworks/Bootstrap",
     "description": "Twitter Bootstrap plugin for CakePHP 3+ app",
     "type": "cakephp-plugin",
     "require": {
