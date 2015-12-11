@@ -4,7 +4,13 @@ A Twitter Bootstrap plugin for CakePHP 3.+
 #### API Documentation
 You can read the API documentation [here](http://www.cmnworks.com/CakePHP3/plugins/Bootstrap/namespace-Bootstrap.View.Helper.html)
 
+#### Requirements
+- CakePHP version >= 3.+
+- Php >=5.4
+
 #### Installation
+You can get this plugin by using composer or by cloning the repo.
+
 ###### Using Composer:
 1.) You’ll need to download and install Composer if you haven’t done so already. 
   ```php
@@ -16,10 +22,6 @@ curl -s https://getcomposer.org/installer | php
   ```php
 composer require cmnworks/bootstrap
  ```
-###### Requirements
-- CakePHP version >= 3.+
-- Php >=5.4
- 
 ###### Clone Repo
   - Navigate to your CakePHP plugins directory
   - Clone the repository using this link https://github.com/cmnworks/Bootstrap
