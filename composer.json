@@ -1,7 +1,21 @@
 {
-    "name": "Cmnworks/Bootstrap",
-    "description": "Twitter Bootstrap plugin for CakePHP 3+ app",
+    "name": "cmnworks/bootstrap",
+    "description": "Twitter Bootstrap plugin for CakePHP 3+",
     "type": "cakephp-plugin",
+    "keywords": ["cakephp", "bootstrap"],
+    "homepage": "https://github.com/cmnworks/Bootstrap",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christopher Natan",
+            "homepage": "http://cmnworks.com",
+            "role": "Author"
+        },
+        {
+            "name": "API Documentation",
+            "homepage": "http://www.cmnworks.com/CakePHP3/plugins/Bootstrap/namespace-Bootstrap.View.Helper.html"
+        }
+    ],
     "require": {
         "php": ">=5.4.16",
         "cakephp/cakephp": "~3.0"
@@ -20,4 +34,5 @@
             "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
         }
     }
+    "minimum-stability": "beta"
 }
