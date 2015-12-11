@@ -1,0 +1,212 @@
+/*
+ *=============================================================================
+ * custom width
+ *=============================================================================
+ */
+.w400px {
+	width: 400px !important
+}
+.w90pc {
+	width: 90% !important
+}
+.w100pc {
+	width: 100% !important
+}
+/*
+ *=============================================================================
+ * nice-collapse
+ *=============================================================================
+ */
+.nice-collapse {
+	min-width: 230px;
+	border-right: 1px solid #dddddd;
+	box-shadow: 1px 6px 3px rgba(0, 0, 0, 0.1);
+	position: fixed;
+	min-height: 1900px
+}
+.nice-collapse .panel-group .panel {
+	border: 0 none;
+	border-radius: 0;
+}
+.nice-collapse .panel-default {
+	border-bottom: 0;
+	margin-top: 0 !important;
+	border-radius: 0;
+	border-right: 0;
+}
+.nice-collapse .fa:first-child {
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	padding: 5px 5px;
+	margin-right: 10px;
+	text-align: center;
+	width: 26px;
+}
+.nice-collapse .fa:last-child {
+	float: right;
+	font-size: 12px;
+	line-height: 22px;
+	opacity: 0.7;
+}
+.nice-collapse .panel-heading {
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+	border-bottom: 0 none;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	cursor: pointer;
+	padding: 6px 15px;
+}
+.nice-collapse .panel-collapse .panel-body {
+	line-height: 8px;
+	padding-left: 54px;
+}
+.nice-collapse .panel-heading:hover {
+	background: #F2F2F2
+}
+.nice-collapse .panel-title {
+	font-size: 12px;
+	padding: 4px 0
+}
+/*
+ *=============================================================================
+ * nice-panels
+ *=============================================================================
+ */
+.nice-panels {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	border-color: -moz-use-text-color #c9c9c9 #c9c9c9;
+	border-image: none;
+	border-radius: 3px;
+	border-style: none solid solid;
+	border-width: 0 1px 1px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	padding: 0;
+}
+.nice-panels h4 { font-size:12px; font-weight:bold}
+.nice-panels span.icon {
+	border-right: 1px solid #cdcdcd;
+	box-shadow: 1px 0 0 0 #ffffff;
+	color: #666;
+	float: left;
+	font-size: 16px;
+	margin-right: 10px;
+	opacity: 0.7;
+	padding: 4px 10px;
+}
+.nice-panels > .panel-heading {
+	background: rgba(0, 0, 0, 0) -moz-linear-gradient(center top, #f8f8f8, #f2f2f2) repeat scroll 0 0;
+	border-bottom: 1px solid #cccccc;
+	border-top: 1px solid #cccccc;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	padding: 8px 15px;
+}
+/*
+ *=============================================================================
+ * nice-tables
+ *=============================================================================
+ */
+.nice-tables {
+	margin: 5px 0;
+}
+.nice-tables, .nice-tables a {
+	font-size: 12px;
+}
+.nice-tables .table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+	border-top: 1px solid #ddd;
+	line-height: 1.42857;
+	padding: 5px 8px;
+	vertical-align: middle;
+}
+.nice-tables .table > thead > tr > th.table-checkbox {
+	width: 2%;
+}
+.nice-tables .table > tbody > tr:hover {
+	background: #FFC
+}
+.nice-tables .table {
+	margin-bottom: 0px;
+}
+.nice-tables .table-bordered > thead > tr > th {
+	border-bottom-width: 1px;
+}
+.nice-tables .table-bordered > tbody > tr > th {
+	font-weight: normal
+}
+.nice-tables .panel-heading {
+	border-left: medium none;
+	border-radius: 0;
+	border-right: medium none;
+	border-top: medium none;
+	padding: 12px 15px;
+	position: relative;
+	border-bottom: 1px solid #cae1ef;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	padding: 10px 15px;
+}
+.nice-tables .table-radio { width:30px}
+/*
+ *=============================================================================
+ * alert-modal 
+ *=============================================================================
+ */
+.alert-modal {
+	top: 45%
+}
+.alert-modal .modal-content {
+	border-radius: 0 !important;
+	border: 5px solid rgba(0, 0, 0, 0);
+	border-left: 0;
+	border-right: 0
+}
+/*
+ *=============================================================================
+ * callouts 
+ *=============================================================================
+ */
+
+.bs-callout {
+	margin: 20px 0;
+	padding: 15px 30px 15px 15px;
+	border-left: 5px solid #eee;
+}
+.bs-callout h4 {
+	margin-top: 0;
+}
+.bs-callout p:last-child {
+	margin-bottom: 0;
+}
+.bs-callout code, .bs-callout .highlight {
+	background-color: #fff;
+}
+.bs-callout-danger {
+	background-color: #fcf2f2;
+	border-color: #dFb5b4;
+}
+.bs-callout-warning {
+	background-color: #fefbed;
+	border-color: #f1e7bc;
+}
+.bs-callout-info {
+	background-color: #f0f7fd;
+	border-color: #d0e3f0;
+}
+
+/*
+ *=============================================================================
+ * list group 
+ *=============================================================================
+ */
+ .list-group li span { float:right; font-weight:bold}
+ 
+ 
+ /*
+ *=============================================================================
+ * confirmation modal 
+ *=============================================================================
+ */
+.confirmation-modal .modal-body {font-size:13px; padding:40px 20px}
