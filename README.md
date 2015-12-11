@@ -1,4 +1,4 @@
-## CakePHP Twitter Bootstrap Plugin
+## Cakestrap
 A Twitter Bootstrap plugin for CakePHP 3.+
 
 #### API Documentation
