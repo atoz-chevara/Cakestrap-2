@@ -16,6 +16,9 @@
             "homepage": "http://www.cmnworks.com/CakePHP3/plugins/Bootstrap/namespace-Bootstrap.View.Helper.html"
         }
     ],
+    "require": {
+        "php": ">=5.4.16"
+    },
     "autoload": {
         "psr-4": {
             "Bootstrap\\": "src"
@@ -25,6 +28,5 @@
         "psr-4": {
             "Bootstrap\\Test\\": "tests"
         }
-    },
-	"preferred-install": "dev"
+    }
 }
