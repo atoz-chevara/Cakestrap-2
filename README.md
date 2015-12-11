@@ -10,9 +10,9 @@ You can read the API documentation [here](http://www.cmnworks.com/CakePHP3/plugi
   ```php
 curl -s https://getcomposer.org/installer | php
  ```
-2.) On your CakePHP app go to plugins folder.
+2.) On your CakePHP app navigate to plugins folder.
 
-3.) Get a new Bootstrap plugin by running:
+3.) Get this plugin by running:
   ```php
 composer require cmnworks/bootstrap
  ```
@@ -21,8 +21,8 @@ composer require cmnworks/bootstrap
 - Php >=5.4
  
 ###### Clone Repo
-  - On GitHub, navigate to your CakePHP plugins directory
-  - Clone the repository with this link https://github.com/cmnworks/Bootstrap
+  - Navigate to your CakePHP plugins directory
+  - Clone the repository using this link https://github.com/cmnworks/Bootstrap
  
 #### Configuration
   - Navigate to your app config folder
