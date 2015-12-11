@@ -8,6 +8,7 @@ You can read the API documentation [here](http://www.cmnworks.com/CakePHP3/plugi
 - CakePHP version >= 3.+
 - Php >=5.4
 - Composer
+
 #### Installation
 You can get this plugin using composer or by cloning the repository.
 
