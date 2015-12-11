@@ -1,6 +1,6 @@
 {
-    "name": "Cmnworks/Bootstrap",
-    "description": "Bootstrap plugin for DevString App",
+    "name": "CMNworks/Bootstrap",
+    "description": "Twitter Bootstrap plugin for CakePHP 3+ app",
     "type": "cakephp-plugin",
     "require": {
         "php": ">=5.4.16",
