@@ -20,5 +20,6 @@
          "psr-4": {
             "Cakestrap\\": "src"
         }
-    }
+    },
+	"minimum-stability": "stable"
 }
