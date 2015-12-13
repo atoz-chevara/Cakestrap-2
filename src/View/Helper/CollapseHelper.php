@@ -1,6 +1,7 @@
 <?php
 /**
- * Copyright (c) CMNWorks
+ * Cakestrap
+ * Twitter Bootstrap Plugin for CakePHP 3+
  *
  * Licensed under The MIT License
  * For full copyright and license information, please see the LICENSE.txt
@@ -12,7 +13,6 @@
  * @since         1.8.8
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
-
 namespace Cakestrap\View\Helper;
 
 /**
